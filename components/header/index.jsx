@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ReactNode, useState } from 'react'
 import { useRouter } from 'next/router'
 import Logo from '../logo';
-import Sticky from '../../libs/sticky';
+import Sticky from 'wil-react-sticky';
 import Menu from '../icons/menu';
 import React from 'react';
 
