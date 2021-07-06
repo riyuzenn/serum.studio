@@ -3,13 +3,19 @@ import * as Icons from 'react-feather';
 import { usePrefers } from '../../libs/use-prefers';
 import style from './header.module.css';
 import Link from 'next/link';
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { useRouter } from 'next/router'
 import Logo from '../logo';
 import Sticky from '../../libs/sticky';
 import Menu from '../icons/menu';
+import React from 'react';
 
-const ActiveLink = ({ href, children}) => {
+type ActiveLinkProps = {
+  href: string;
+  children: ReactNode;
+}
+
+const ActiveLink = ({ href, children}: ActiveLinkProps) => {
   const { pathname } = useRouter()
 
   return (
