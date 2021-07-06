@@ -5,8 +5,9 @@ import style from './header.module.css';
 import Link from 'next/link';
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import Logo from '../logo';
 
-const ActiveLink = ({ href, children }) => {
+const ActiveLink = ({ href, children}) => {
   const { pathname } = useRouter()
 
   return (
@@ -33,7 +34,7 @@ const Header = () => {
       <header className={style.header}>
         <Link href="/">
           <a className={style.logo} aria-label="Hyper logo">
-            <Icons.Terminal height={31} width={32} />
+            <Logo fill={`${theme.palette.foreground}`} height={31} width={32} />
           </a>
         </Link>
 
