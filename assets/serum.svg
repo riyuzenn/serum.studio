@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 487 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g>
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.6295,0,0,0.6295,-20.5016,-13.3639)">
         <g transform="matrix(0.3244,0,0,0.3244,43.5008,56.4288)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,0.3244,9.11443,-9.74882)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,-0.3244,60.3696,153.749)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,0.3244,59.7208,23.34)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,-0.3244,42.852,120.66)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,-0.3244,25.9832,87.5712)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,0.3244,25.9832,23.34)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
         <g transform="matrix(0.3244,0,0,-0.3244,9.11443,120.66)">
-            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:3.08px;"/>
+            <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;fill-opacity:0;stroke:black;stroke-width:8.3px;"/>
         </g>
-    </g>
-    <g transform="matrix(1.3006,0,0,1.3006,-70.3081,-30.6138)">
-        <text x="160.557px" y="100.294px" style="font-family:'CircularStd-Bold', 'Circular Std', sans-serif;font-weight:700;font-size:86.978px;fill:white;">s<tspan x="200.48px 248.578px 282.76px " y="100.294px 100.294px 100.294px ">eru</tspan>m</text>
     </g>
 </svg>
