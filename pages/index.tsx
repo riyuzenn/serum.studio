@@ -6,9 +6,9 @@ import style from "../styles/pages/home.module.css"
 
 
 
-const AngloPage = () => {
+const HomePage = () => {
   return (
-      <Page size={'mini'}>
+      <Page>
         {/* Hero Section */}
         <div className={style.hero__section}>
 
@@ -16,19 +16,20 @@ const AngloPage = () => {
           Design,<br></br>Innovate.</h1>
 
           <Divider />
-          <p>
-            We are Serum Studio, we build, design and innovate. <br></br> 
-            Our priotity is to give high quality products for free with ease!
-          </p>
-          
-          <Row gap={12}>
+          <div className={style.hero__tagline}>
+            <p>
+              We are Serum Studio. We build, design and innovate. <br></br> 
+              Our main priority is to give high-quality products for free with ease!
+            </p>
+          </div>
+          <div className={style.hero__btn__row}>
             <Button icon={ <Icons.Layers /> } className={style.hero__btn} type="secondary">
               Projects
             </Button>
-            <Button icon={<Icons.Twitter />} onClick={() => { window.open('https://twitter.com/serumstudio', '_blank') }}>
+            <Button icon={<Icons.Twitter />} className={style.hero__btn} onClick={() => { window.open('https://twitter.com/serumstudio', '_blank') }}>
               Twitter
             </Button>
-          </Row>
+          </div>
           
         </div>
 
@@ -55,4 +56,4 @@ const AngloPage = () => {
   )
 };
 
-export default AngloPage;
+export default HomePage;

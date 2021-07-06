@@ -3,7 +3,8 @@
   height: 70px;
   display: grid;
   grid: auto-flow / repeat(3, 1fr);
-  backdrop-filter: blur(2px);
+  opacity: 200;
+  backdrop-filter: blur(30px);
 }
 
 .logo {
