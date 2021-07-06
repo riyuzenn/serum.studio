@@ -35,8 +35,9 @@ const Header = () => {
     <Sticky>
       <header className={style.header} style={{ backgroundColor: `${theme.palette.background}` }}>
         <Link href="/">
-          <a className={style.logo} aria-label="Hyper logo">
-            <Logo fill={`${theme.palette.foreground}`} height={24} width={24} />
+          <a className={style.logo} aria-label="Serum Logo">
+            {/* <Logo fill={`${theme.palette.foreground}`} height={24} width={24} /> */}
+            <img src="serum.svg" width={24} />
           </a>
         </Link>
 

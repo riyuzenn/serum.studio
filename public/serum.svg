@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.6295,0,0,0.6295,-20.5016,-13.3639)">
+        <g transform="matrix(1.58856,0,0,1.58856,32.5681,21.2294)">
+            <circle cx="32" cy="32" r="32" style="fill:rgb(17,17,17);"/>
+        </g>
+        <g transform="matrix(0.840909,0,0,0.840909,9.26098,12.1325)">
+            <g transform="matrix(0.227817,0,0,0.229923,62.5291,62.6156)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,0.229923,30.4377,10.9455)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,-0.229923,77.5527,131.593)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,0.229923,77.097,37.5748)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,-0.229923,62.0734,106.552)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,-0.229923,45.4613,79.9226)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,0.229923,47.0499,37.5748)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.227817,0,0,-0.229923,30.4377,106.552)">
+                <path d="M150,100L200,200L100,200L150,100Z" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>
