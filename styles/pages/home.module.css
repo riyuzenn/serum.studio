@@ -1,0 +1,18 @@
+
+.hero__section{
+    z-index: inherit;
+    position: relative;
+    align-items: center;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size:  18vh;
+    line-height: 1;
+    text-align: center;
+}
+
+.hero__btn {
+    margin: auto;
+    display: block;
+}

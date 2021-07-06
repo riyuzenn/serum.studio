@@ -3,6 +3,7 @@
   height: 85px;
   display: grid;
   grid: auto-flow / repeat(3, 1fr);
+
 }
 
 .logo {
