@@ -1,8 +1,9 @@
 .header {
   composes: container from global;
-  height: 85px;
+  height: 70px;
   display: grid;
   grid: auto-flow / repeat(3, 1fr);
+  backdrop-filter: blur(2px);
 
 }
 
