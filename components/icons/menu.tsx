@@ -1,6 +1,12 @@
 import React from "react";
 
-const Menu = ({ fill, height=24, width=24 }) => {
+type MenuProps = {
+  fill:   any;
+  height: any;
+  width:  any
+}
+
+const Menu = ({ fill, height=24, width=24 }: MenuProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
