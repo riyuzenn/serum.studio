@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "noImplicitAny": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/terminal/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/terminal/index.js", "components/header/index.jsx"],
   "exclude": ["node_modules"]
 }

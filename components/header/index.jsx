@@ -10,12 +10,8 @@ import Sticky from '../../libs/sticky';
 import Menu from '../icons/menu';
 import React from 'react';
 
-type ActiveLinkProps = {
-  href: string;
-  children: ReactNode;
-}
 
-const ActiveLink = ({ href, children}: ActiveLinkProps) => {
+const ActiveLink = ({ href, children}) => {
   const { pathname } = useRouter()
 
   return (
