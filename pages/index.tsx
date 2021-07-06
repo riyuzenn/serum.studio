@@ -2,6 +2,7 @@
 import { Page, Note, Divider, Button, Link, Row, Col } from "@geist-ui/react";
 import * as Icons from "react-feather";
 import style from "../styles/pages/home.module.css"
+import social from "../libs/constants";
 
 
 const AngloPage = () => {
@@ -23,7 +24,7 @@ const AngloPage = () => {
             <Button icon={ <Icons.Layers /> } className={style.hero__btn} type="secondary">
               Projects
             </Button>
-            <Button icon={<Icons.Twitter />}>
+            <Button icon={<Icons.Twitter />} onClick={() => { window.open('https://twitter.com/serumstudio', '_blank') }}>
               Twitter
             </Button>
           </Row>
