@@ -65,7 +65,7 @@ const Terminal = ({ data, success_text }) => {
             {data.map(({ index, text} , i) => (
                 lineCount >= index && renderLine(`${text}`)
             ))} 
-          {lineCount >= 5 && (
+          {lineCount >= 4 && (
             <>
               <p className={styles.green}>
                 <Line

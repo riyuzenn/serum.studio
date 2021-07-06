@@ -6,9 +6,8 @@ import Terminal from "../components/terminal";
 var term_data = [
   { index: 0, text: "# Hype CLI, a lightweight cli toolkit for creating commands.", },
   { index: 1, text: "# Built with pure Python 3.", },
-  { index: 2, text: "# Lightweight and fast.", },
-  { index: 3, text: "# Decorator based, easy to install.", },
-  { index: 4, text: "pip install hypecli.", },
+  { index: 2, text: "# Decorator based, easy to install.", },
+  { index: 3, text: "pip install hypecli.", },
 ]
 
 export default function Home() {

@@ -1,12 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Terminal from '../components/terminal'
+import AngloHeroSection from '../sections/anglo/hero'
 
-
-export default function Home() {
+const AngloPage = () => {
   return (
-   <>
-    <Terminal></Terminal>
-   </>
+      <AngloHeroSection />
   )
-}
+};
+
+export default AngloPage;

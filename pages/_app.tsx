@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app';
 import { GeistProvider, CssBaseline } from '@geist-ui/react';
 import { PrefersContext, themes, ThemeType } from '../libs/use-prefers';
 import Header from '../components/header';
+import '../styles/global.css';
 
 const SerumApp = ({ Component, pageProps }: AppProps) => {
   const [themeType, setThemeType] = useState<ThemeType>('light');
