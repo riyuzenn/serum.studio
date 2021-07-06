@@ -5,6 +5,7 @@ import style from "../styles/pages/home.module.css"
 // import social from "../libs/constants";
 
 
+
 const AngloPage = () => {
   return (
       <Page size={'mini'}>
