@@ -3,7 +3,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { GeistProvider, CssBaseline } from '@geist-ui/react';
 import { PrefersContext, themes, ThemeType } from '../libs/use-prefers';
-import Menu from '../components/header/menu';
+import Header from '../components/header';
 
 const SerumApp = ({ Component, pageProps }: AppProps) => {
   const [themeType, setThemeType] = useState<ThemeType>('light');
@@ -38,7 +38,7 @@ const SerumApp = ({ Component, pageProps }: AppProps) => {
       <GeistProvider themeType={themeType}>
         <CssBaseline />
         <PrefersContext.Provider value={{ themeType, switchTheme }}>
-          <Menu />
+          <Header />
           <Component {...pageProps} />
         </PrefersContext.Provider>
       </GeistProvider>
