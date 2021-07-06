@@ -26,7 +26,7 @@ const HomePage = () => {
             <Button icon={ <Icons.Layers /> } className={style.hero__btn} type="secondary">
               Projects
             </Button>
-            <Button icon={<Icons.Twitter />} className={style.hero__btn} onClick={() => { window.open('https://twitter.com/serumstudio', '_blank') }}>
+            <Button icon={<Icons.Twitter />} type="secondary" ghost className={style.hero__btn} onClick={() => { window.open('https://twitter.com/serumstudio', '_blank') }}>
               Twitter
             </Button>
           </div>
