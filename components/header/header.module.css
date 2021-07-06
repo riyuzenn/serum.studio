@@ -4,7 +4,6 @@
   display: grid;
   grid: auto-flow / repeat(3, 1fr);
   backdrop-filter: blur(2px);
-
 }
 
 .logo {
@@ -36,6 +35,11 @@
   margin: auto 0 auto auto;
 }
 
+.btn_toggle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 24px;
+}
 
 .mobileNav {
   composes: container from global;
@@ -81,5 +85,6 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
+    color: #444;
   }
 }

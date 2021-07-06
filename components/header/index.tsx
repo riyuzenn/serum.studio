@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Logo from '../logo';
 import Sticky from '../../libs/sticky';
+import Menu from '../icons/menu';
 
 const ActiveLink = ({ href, children}) => {
   const { pathname } = useRouter()
@@ -35,7 +36,7 @@ const Header = () => {
       <header className={style.header}>
         <Link href="/">
           <a className={style.logo} aria-label="Hyper logo">
-            <Logo fill={`${theme.palette.foreground}`} height={31} width={32} />
+            <Logo fill={`${theme.palette.foreground}`} height={24} width={24} />
           </a>
         </Link>
 
@@ -55,7 +56,7 @@ const Header = () => {
         </nav>
 
         <div className={style.rightNav}>
-            <div>
+            <div className={style.btn_toggle}>
               <Button
                 aria-label="Toggle Dark mode"
                 auto
@@ -70,7 +71,7 @@ const Header = () => {
         </div>
 
         <span className={style.toggle} onClick={toggle}>
-          <Icons.Menu />
+          <Menu fill={`${theme.palette.foreground}`} />
         </span>
       </header>
 
