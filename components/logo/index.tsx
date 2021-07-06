@@ -1,6 +1,12 @@
 import React from "react";
 
-const Logo = ({ fill, height = 32, width = 32 }) => {
+type LogoProps = {
+  fill:   any;
+  height: any;
+  width:  any
+}
+
+const Logo = ({ fill, height = 32, width = 32 }: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
