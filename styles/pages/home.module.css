@@ -2,7 +2,11 @@
 .hero__section{
     z-index: inherit;
     position: relative;
-    align-items: center;
+    text-align: center;
+}
+
+.hero__section p {
+    text-align: center;
 }
 
 .hero__title {
