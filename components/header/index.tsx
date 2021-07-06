@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Logo from '../logo';
+import Sticky from '../../libs/sticky';
 
 const ActiveLink = ({ href, children}) => {
   const { pathname } = useRouter()
@@ -30,7 +31,7 @@ const Header = () => {
   const toggle = () => setMobileNavShown(!mobileNavShown)
 
   return (
-    <>
+    <Sticky>
       <header className={style.header}>
         <Link href="/">
           <a className={style.logo} aria-label="Hyper logo">
@@ -90,7 +91,7 @@ const Header = () => {
         </Link>
         
       </nav>
-    </>
+    </Sticky>
   )
 }
 
