@@ -26,7 +26,7 @@ const SerumApp = ({ Component, pageProps }: AppProps) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <title>React Dashboard Design</title>
+        <title>Serum Studio</title>
         <meta name="og:title" content="Serum Studio" />
         <meta name="og:description" content="..." />
         <meta name="description" content="..." />

@@ -1,19 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Terminal from "../components/terminal";
+import AngloHeroSection from '../sections/anglo/hero'
 
-var term_data = [
-  { index: 0, text: "# Anglo, a modern lightweight web framework.", },
-  { index: 1, text: "# Built with pure Python 3.", },
-  { index: 2, text: "# Lightweight and fast.", },
-  { index: 3, text: "# Decorator based, easy to install.", },
-  { index: 4, text: "pip install anglo.", },
-]
-  
-
-export default function Home() {
+const AngloPage = () => {
   return (
-    <Terminal data={term_data} success_text={'Anglo is successfully installed.'} ></Terminal>
+      <AngloHeroSection />
   )
-}
+};
+
+export default AngloPage;

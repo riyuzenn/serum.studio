@@ -1,5 +1,5 @@
 import { Keyframes, Frame } from './keyframe';
-import styles from '../../styles/terminal.module.css';
+import styles from '../../styles/components/terminal.module.css';
 import { useState } from 'react';
 
 const sleepDuration = 500

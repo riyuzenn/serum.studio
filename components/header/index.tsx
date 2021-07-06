@@ -1,7 +1,6 @@
 import React from 'react';
 import {  Button, useTheme } from '@geist-ui/react';
 import * as Icons from 'react-feather';
-import Submenu from './submenu';
 import { usePrefers } from '../../libs/use-prefers';
 
 const Menu: React.FC = () => {
@@ -24,7 +23,6 @@ const Menu: React.FC = () => {
           </Button>
         </div>
       </nav>
-      <Submenu />
       <style jsx>{`
         .menu-nav {
           display: flex;
