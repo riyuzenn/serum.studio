@@ -33,7 +33,7 @@ const ProjectPage = () => {
             
                 <Divider />
                 <User src="https://github.com/serumstudio.png" name="Serum Studio">
-                    <User.Link href="https://twitter.com/serumstudio">@serumstudio</User.Link>
+                    <User.Link href="https://twitter.com/serumstudio" rel="noreferrer" >@serumstudio</User.Link>
                 </User>
                 <p>
                     Here are some list of our projects that we developed this past year. Most of theme <br></br>
@@ -89,7 +89,7 @@ const ProjectPage = () => {
                         <Spacer />
                         <Description title="How to report bug?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                It&apos;s simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub</a>. 
+                                It&apos;s simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noreferrer">GitHub</a>. 
                                 Or you can chat with developers via <br></br> discord: <Code>Zenqi#0231</Code>
                                 for full-time support.
                             </p>
