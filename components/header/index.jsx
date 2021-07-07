@@ -1,4 +1,4 @@
-import {  Button, useTheme } from '@geist-ui/react';
+import {  Button, useTheme, Image } from '@geist-ui/react';
 import * as Icons from 'react-feather';
 import { usePrefers } from '../../libs/use-prefers';
 import style from './header.module.css';
@@ -39,7 +39,7 @@ const Header = () => {
         <Link href="/">
           <a className={style.logo} aria-label="Serum Logo">
             {/* <Logo fill={`${theme.palette.foreground}`} height={24} width={24} /> */}
-            <img src="serum.svg" width={24} />
+            <Image src="serum.svg" width={24} />
           </a>
         </Link>
 
