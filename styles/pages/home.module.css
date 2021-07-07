@@ -1,10 +1,4 @@
 
-.hero__section{
-    z-index: inherit;
-    position: relative;
-    text-align: center;
-}
-
 @keyframes gradientAnim {
     0% {
         background-position: 0% 50%;
@@ -16,6 +10,15 @@
         background-position: 0% 50%;
     }
 }
+
+/* Home page */
+
+.hero__section{
+    z-index: inherit;
+    position: relative;
+    text-align: center;
+}
+
 
 .text__animation {
     background: -webkit-linear-gradient(right, #c700ff,#46a0ff);
@@ -49,6 +52,17 @@
     margin-left: -20px;
     margin-right: -20px;
 }
+
+
+/* Project Section */
+
+.project__title {
+    font-weight: 800;
+    line-height: 1;
+
+}
+
+
 
 
 @media (min-width:320px)  { 
@@ -95,5 +109,8 @@
 @media (min-width:1281px) { 
     .hero__title {
         font-size: 19vh;
+    }
+    .project__title {
+        font-size: 10vh;
     }
  }
