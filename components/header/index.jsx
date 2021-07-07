@@ -81,15 +81,20 @@ const Header = () => {
       <nav
         className={`${style.mobileNav} ${mobileNavShown ? style.active : ''}`}
       >
-        <Link href="/plugins">
-          <a>Plugins</a>
+        <Link href="/home">
+          <a>Home</a>
         </Link>
-        <Link href="/themes">
-          <a>Themes</a>
+        <Link href="/projects">
+          <a>Projects</a>
         </Link>
-        <Link href="/store/submit">
-          <a>Submit</a>
-        </Link>
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/serumstudio"
+            className={style.link}
+          >
+            GitHub
+        </a>
         <Link href="/blog">
           <a>Blog</a>
         </Link>
