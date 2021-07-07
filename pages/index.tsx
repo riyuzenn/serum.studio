@@ -2,13 +2,20 @@
 import { Page, Note, Divider, Button, Link, Row, Col } from "@geist-ui/react";
 import * as Icons from "react-feather";
 import style from "../styles/pages/home.module.css"
-// import social from "../libs/constants";
-
+import SEO from "../components/seo";
 
 
 const HomePage = () => {
   return (
+      
       <Page>
+        <SEO 
+          description = "We build, design and innovate. Our main priority is to give high-quality products for free with ease!"
+          title = "Serum Studio"
+          author = "serumstudio"
+          image = "preview.png"
+          theme = "#111"
+        />
         {/* Hero Section */}
         <div className={style.hero__section}>
 

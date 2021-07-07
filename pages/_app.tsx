@@ -25,7 +25,7 @@ const SerumApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111" />
         <title>Serum Studio</title>
@@ -34,7 +34,7 @@ const SerumApp = ({ Component, pageProps }: AppProps) => {
         <meta name="og:description" content="We build, design and innovate. Our main priority is to give high-quality products for free with ease!" />
         <meta name="description" content="We build, design and innovate. Our main priority is to give high-quality products for free with ease!" />
 
-        {/* twitter card */}
+      
         <meta name="twitter:title" content="Serum Studio" />
         <meta name="twitter:description" content="We build, design and innovate. Our main priority is to give high-quality products for free with ease!" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ const SerumApp = ({ Component, pageProps }: AppProps) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
-      </Head>
+      </Head> */}
       <GeistProvider themeType={themeType}>
         <CssBaseline />
         <PrefersContext.Provider value={{ themeType, switchTheme }}>
