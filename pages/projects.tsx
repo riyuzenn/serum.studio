@@ -36,8 +36,7 @@ const ProjectPage = () => {
                     <User.Link href="https://twitter.com/serumstudio" rel="noreferrer" >@serumstudio</User.Link>
                 </User>
                 <p>
-                    Here are some list of our projects that we developed this past year. Most of theme <br></br>
-                    were open source and distributed under MIT license.
+                Here is a list of the projects that we developed this past year. Most of it <br></br> was open-source and distributed under MIT license.
                 </p>
 
                 <Row>
@@ -52,8 +51,8 @@ const ProjectPage = () => {
                     <Note type="warning">This application is only available for Windows</Note>
                 </div>
                 <Text>
-                    🎙 Serum Microphone is a open source text-to-speech program that act as your microphone. <br></br>
-                    It was developed for those who doesn&apos;t have a microphone. It is easy to use and lightweight. Up to 10mb of storage is used.
+                    🎙 Serum Microphone is a open-source text-to-speech program that acts as your microphone. <br></br>
+                    It was developed for those who doesn&apos;t have a microphone. It is easy to use and lightweight. Up to 10MB of storage is used.
                 </Text>
 
                 {/* Features Section */}
