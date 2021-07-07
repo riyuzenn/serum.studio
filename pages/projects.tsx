@@ -72,7 +72,7 @@ const ProjectPage = () => {
                         <Description title="Open Source and absolutely free" content={
                             <p style={{ fontWeight: 500 }}>
                                 This project is completely free and open source. <br></br> 
-                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noopener noreferrer" >GitHub Repo</a> also open <br></br> 
+                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noreferrer" >GitHub Repo</a> also open <br></br> 
                                 an issue if there is.
                             </p>
                         }/>
@@ -81,7 +81,7 @@ const ProjectPage = () => {
                     <Collapse title="FAQ">
                         <Description title="How it Works?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"} rel="noopener noreferrer" >VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
+                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"} rel="noreferrer" >VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
                                 the streamed audio comes with. It won&apos;t work unless you installed the driver and setup the <br></br> audio input. <br></br> 
                                 <a href="">Learn more here</a> 
                             </p>
