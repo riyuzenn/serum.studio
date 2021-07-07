@@ -1,17 +1,61 @@
 
 import { 
-    Page, Divider, Tag, Badge, Row, Spacer, Code, Note, 
-    Collapse, Text, Description, User, useTheme 
+    Page, Divider, Tag, Badge, Row, Spacer, Code, Note, Grid,
+    Collapse, Text, Description, User, Snippet, Button, Loading, useTheme 
 
 } from "@geist-ui/react";
 
 import SEO from "../components/seo";
 import style from "../styles/pages/home.module.css"
+import Terminal from "../components/terminal";
+import { useState, useEffect } from "react";
+import WindowsIcon from "../components/icons/windows";
+import * as Icons from "react-feather";
+
+const anglo_data = [
+    { index: 0, text: "# Anglo, a modern lightweight web framework.", },
+    { index: 1, text: "# Built with pure Python 3.", },
+    { index: 2, text: "# Decorator based, easy to install.", },
+    { index: 3, text: "pip install anglo.", },
+]
 
 
+async function fetchTextFromUrl(url: string){
+    let response = await fetch(url);
+    let result = await response.text();
+    
+}
 
 const ProjectPage = () => {
     const theme = useTheme();
+    const [serummicVersion, setSerummicVersion] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null)
+
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/serumstudio/microphone/main/version.txt')
+        .then (response => {
+            if (response.ok){
+                return response.text();
+            }
+            throw response;
+        })
+        .then(serummicver => {
+            setSerummicVersion(serummicver);
+        })
+        .catch(error => {
+            console.error(`Error fetching: ${error}`);
+            setError(error);
+        })
+        .finally(() => {
+            setLoading(false);
+        })
+    }, [])
+
+
+    if (loading) return ( <Page><Loading style={{ textAlign: 'center' }} type="success">Loading</Loading></Page> )
+    if (error) return (<Page style={{ textAlign: 'center' }}>{error}</Page>)
+
     return (
         <Page size={`mini`}>
             <SEO 
@@ -41,7 +85,12 @@ const ProjectPage = () => {
 
                 <Row>
                     <h2>Serum Microphone</h2>
-                    <Badge style={{ height: 22, marginTop: "10px", marginLeft: "5px" }} type="success" className={style.project__version}>1.1.3</Badge>
+                    
+                    <Badge style={{ height: 22, marginTop: "10px", marginLeft: "5px" }} type="success" className={style.project__version}>
+                        {
+                            serummicVersion
+                        }
+                    </Badge>
                 </Row>
                 
                 <div>
@@ -63,8 +112,10 @@ const ProjectPage = () => {
                         <Spacer />
                         <Description title="Improved performance" content={
                             <p style={{ fontWeight: 500 }}>
-                                If you use v1.1.3 we had a big update where <br></br> 
-                                we focus on performance issues
+                                
+                                If you use v1.1.3+, we had a big update where <br></br>
+                                we focus on performance issues  
+                                
                             </p>
                         }/>
                         <Spacer />
@@ -102,7 +153,36 @@ const ProjectPage = () => {
                         } />
                     </Collapse>
                 </Collapse.Group>
+                <Text>
+                    For more information, documentation and source, kindly visit the main <a href="https://github.com/serumstudio/microphone/tree/main/docs" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer" >GitHub Documentation</a>. Or you may join our 
+                    <a href="#" style={{ fontWeight: 'bold' }}> Discord Server</a> for help & support.
+                </Text>
 
+                <div className={style.installation}>
+                <h2>Installation</h2>
+                    <Text>
+                        Serum Microphone was first released on <Code>April 12, 2021.</Code> If you still don&apos;t know how to install and setup, we have <a href="https://www.youtube.com/watch?v=XNxFuK9xeSY" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer">Tutorial Video</a>.                    
+                    </Text>
+                    <Spacer />
+                    <Grid.Container>
+                        <Grid xs={24} md={12}><Button shadow icon={<WindowsIcon fill={`${theme.palette.background}`} height={24} width={24} />} type="secondary" onClick = {() => { window.location.href = `https://github.com/serumstudio/microphone/releases/download/${serummicVersion}/serummic-${serummicVersion}.rar` }} >{` Download `}</Button></Grid>
+                        <Grid xs={10} md={12}><Button shadow icon={<Icons.Youtube />} type="secondary" onClick = {() => { window.open('https://www.youtube.com/watch?v=XNxFuK9xeSY', '_blank') }} >{` Video Tutorial `}</Button></Grid>
+                        
+                    </Grid.Container>
+                </div>
+                
+                {/* Anglo */}
+
+                <Divider />
+                <h2>Anglo</h2>
+                <Note type="error" label="STATUS">Development | Ongoing</Note>
+                <Text>
+                    🪐 Anglo is a modern lightweight web framework for Python 3.
+                </Text>
+
+                <Terminal data={anglo_data} success_text={'Anglo is successfully installed.'} />
+                <Spacer />
+                <Snippet style={{ lineHeight: 2 }} text="pip install anglo" width="500px" />
             </div>
             
 
