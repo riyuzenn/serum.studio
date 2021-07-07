@@ -81,7 +81,7 @@ const Header = () => {
       <nav
         className={`${style.mobileNav} ${mobileNavShown ? style.active : ''}`}
       >
-        <Link href="/home">
+        <Link href="/">
           <a>Home</a>
         </Link>
         <Link href="/projects">
