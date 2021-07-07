@@ -13,7 +13,7 @@ const HomePage = () => {
           description = "We build, design and innovate. Our main priority is to give high-quality products for free with ease!"
           title = "Serum Studio"
           author = "serumstudio"
-          image = "preview.png"
+          image = "https://imgur.com/KamgzqK.png"
           theme = "#111"
         />
         {/* Hero Section */}
