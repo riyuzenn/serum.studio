@@ -53,7 +53,7 @@ const ProjectPage = () => {
                 </div>
                 <Text>
                     🎙 Serum Microphone is a open source text-to-speech program that act as your microphone. <br></br>
-                    It was developed for those who doesn't have a microphone. It is easy to use and lightweight. Up to 10mb of storage is used.
+                    It was developed for those who doesn&apos;t have a microphone. It is easy to use and lightweight. Up to 10mb of storage is used.
                 </Text>
 
                 {/* Features Section */}
@@ -72,7 +72,7 @@ const ProjectPage = () => {
                         <Description title="Open Source and absolutely free" content={
                             <p style={{ fontWeight: 500 }}>
                                 This project is completely free and open source. <br></br> 
-                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub Repo</a> also open <br></br> 
+                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noopener noreferrer" >GitHub Repo</a> also open <br></br> 
                                 an issue if there is.
                             </p>
                         }/>
@@ -81,15 +81,15 @@ const ProjectPage = () => {
                     <Collapse title="FAQ">
                         <Description title="How it Works?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"}>VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
-                                the streamed audio comes with. It won't work unless you installed the driver and setup the <br></br> audio input. <br></br> 
+                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"} rel="noopener noreferrer" >VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
+                                the streamed audio comes with. It won&apos;t work unless you installed the driver and setup the <br></br> audio input. <br></br> 
                                 <a href="">Learn more here</a> 
                             </p>
                         } />
                         <Spacer />
                         <Description title="How to report bug?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                It's simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub</a>. 
+                                It&apos;s simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub</a>. 
                                 Or you can chat with developers via <br></br> discord: <Code>Zenqi#0231</Code>
                                 for full-time support.
                             </p>
@@ -97,8 +97,8 @@ const ProjectPage = () => {
                         <Spacer />
                         <Description title="Is it safe?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                Absolutely yes. We want to deliver high quality products for free. We don't want to
-                                destroy our customer's trust with our products.
+                                Absolutely yes. We want to deliver high quality products for free. We don&apos;t want to
+                                destroy our customer&apos;s trust with our products.
                             </p>
                         } />
                     </Collapse>
