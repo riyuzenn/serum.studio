@@ -72,7 +72,7 @@ const ProjectPage = () => {
                         <Description title="Open Source and absolutely free" content={
                             <p style={{ fontWeight: 500 }}>
                                 This project is completely free and open source. <br></br> 
-                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target="_blank">GitHub Repo</a> also open <br></br> 
+                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub Repo</a> also open <br></br> 
                                 an issue if there is.
                             </p>
                         }/>
@@ -81,7 +81,7 @@ const ProjectPage = () => {
                     <Collapse title="FAQ">
                         <Description title="How it Works?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                This software is powered by <a href="https://vb-audio.com/Cable/" target="_blank">VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
+                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"}>VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
                                 the streamed audio comes with. It won't work unless you installed the driver and setup the <br></br> audio input. <br></br> 
                                 <a href="">Learn more here</a> 
                             </p>
@@ -89,7 +89,7 @@ const ProjectPage = () => {
                         <Spacer />
                         <Description title="How to report bug?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                It's simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target="_blank">GitHub</a>. 
+                                It's simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"}>GitHub</a>. 
                                 Or you can chat with developers via <br></br> discord: <Code>Zenqi#0231</Code>
                                 for full-time support.
                             </p>
