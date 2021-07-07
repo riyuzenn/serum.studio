@@ -19,8 +19,11 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className={style.hero__section}>
 
-          <h1 className={style.hero__title}>We Build,<br></br>
-          Design,<br></br>Innovate.</h1>
+          <h1 className={style.hero__title}>
+            We <span className={style.text__animation}>Build</span>,<br></br>
+            Design,<br></br>
+            <span className={style.text__animation}>Innovate.</span>
+          </h1>
 
           <Divider />
           <div className={style.hero__tagline}>

@@ -5,6 +5,29 @@
     text-align: center;
 }
 
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text__animation {
+    background: -webkit-linear-gradient(right, #c700ff,#46a0ff);
+    background: linear-gradient(270deg,#c700ff 0,#46a0ff);
+	background-size: 350%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: gradientAnim 3s ease infinite;
+	animation: gradientAnim 3s ease infinite;
+}
+
 .hero__section p {
     text-align: center;
 }
