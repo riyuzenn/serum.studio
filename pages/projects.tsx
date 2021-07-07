@@ -164,11 +164,11 @@ const ProjectPage = () => {
                         Serum Microphone was first released on <Code>April 12, 2021.</Code> If you still don&apos;t know how to install and setup, we have <a href="https://www.youtube.com/watch?v=XNxFuK9xeSY" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer">Tutorial Video</a>.                    
                     </Text>
                     <Spacer />
-                    <Grid.Container>
-                        <Grid xs={24} md={12}><Button shadow icon={<WindowsIcon fill={`${theme.palette.background}`} height={24} width={24} />} type="secondary" onClick = {() => { window.location.href = `https://github.com/serumstudio/microphone/releases/download/${serummicVersion}/serummic-${serummicVersion}.rar` }} >{` Download `}</Button></Grid>
-                        <Grid xs={10} md={12}><Button shadow icon={<Icons.Youtube />} type="secondary" onClick = {() => { window.open('https://www.youtube.com/watch?v=XNxFuK9xeSY', '_blank') }} >{` Video Tutorial `}</Button></Grid>
+                    <div>
+                        <Button shadow icon={<WindowsIcon fill={`${theme.palette.background}`} height={24} width={24} />} type="secondary" onClick = {() => { window.location.href = `https://github.com/serumstudio/microphone/releases/download/${serummicVersion}/serummic-${serummicVersion}.rar` }} >{` Download `}</Button>
+                        <Button shadow icon={<Icons.Youtube />} type="secondary" onClick = {() => { window.open('https://www.youtube.com/watch?v=XNxFuK9xeSY', '_blank') }} >{` Video Tutorial `}</Button>
                         
-                    </Grid.Container>
+                    </div>
                 </div>
                 
                 {/* Anglo */}
