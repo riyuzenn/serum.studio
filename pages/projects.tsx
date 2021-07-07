@@ -1,5 +1,5 @@
 
-import { Page, Divider, Tag, Badge, Row, Spacer, Note, Collapse, Text, Description, useTheme } from "@geist-ui/react";
+import { Page, Divider, Tag, Badge, Row, Spacer, Code, Note, Collapse, Text, Description, useTheme } from "@geist-ui/react";
 import SEO from "../components/seo";
 import style from "../styles/pages/home.module.css"
 
@@ -70,10 +70,24 @@ const ProjectPage = () => {
                     <Collapse title="FAQ">
                         <Description title="How it Works?" content={
                             <p style= {{ fontWeight: 500 }}>
-                                This software is powered by <a href="https://vb-audio.com/Cable/">VB Cable</a>. Basically, <br></br> 
-                                the VB Cable act as the main pipe where the streamed <br></br>
-                                audio comes with. It won't work unless you installed <br></br> 
-                                the driver and setup the audio input. <a href="">Learn more here</a> 
+                                This software is powered by <a href="https://vb-audio.com/Cable/" target="_blank">VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
+                                the streamed audio comes with. It won't work unless you installed the driver and setup the <br></br> audio input. <br></br> 
+                                <a href="">Learn more here</a> 
+                            </p>
+                        } />
+                        <Spacer />
+                        <Description title="How to report bug?" content={
+                            <p style= {{ fontWeight: 500 }}>
+                                It's simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target="_blank">GitHub</a>. 
+                                Or you can chat with developers via <br></br> discord: <Code>Zenqi#0231</Code>
+                                for full-time support.
+                            </p>
+                        } />
+                        <Spacer />
+                        <Description title="Is it safe?" content={
+                            <p style= {{ fontWeight: 500 }}>
+                                Absolutely yes. We want to deliver high quality products for free. We don't want to
+                                destroy our customer's trust with our products.
                             </p>
                         } />
                     </Collapse>
