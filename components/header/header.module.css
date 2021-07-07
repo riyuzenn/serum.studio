@@ -3,14 +3,13 @@
   height: 70px;
   display: grid;
   grid: auto-flow / repeat(3, 1fr);
-  opacity: 200;
-  backdrop-filter: blur(30px);
+  box-shadow: 0 4px 4px -4px rgb(2 2 2 / 15%);
+
 }
 
 .logo {
   display: flex;
-  color: white;
-  margin: auto auto auto 0;
+
 }
 
 .desktopNav {
@@ -30,17 +29,13 @@
 
 .desktopNav > a:not(:last-child) {
   margin-right: 24px;
+
 }
 
 .rightNav {
-  margin: auto 0 auto auto;
+  margin: auto;
 }
 
-.btn_toggle {
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 24px;
-}
 
 .mobileNav {
   composes: container from global;
@@ -54,6 +49,11 @@
 @media (max-width: 768px) {
   .header {
     grid: auto-flow / repeat(2, 1fr);
+  }
+
+  .logo {
+    margin-left: 0%;
+    margin-right: 50vw;
   }
 
   .desktopNav,

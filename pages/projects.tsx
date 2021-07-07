@@ -1,5 +1,10 @@
 
-import { Page, Divider, Tag, Badge, Row, Spacer, Code, Note, Collapse, Text, Description, useTheme } from "@geist-ui/react";
+import { 
+    Page, Divider, Tag, Badge, Row, Spacer, Code, Note, 
+    Collapse, Text, Description, User, useTheme 
+
+} from "@geist-ui/react";
+
 import SEO from "../components/seo";
 import style from "../styles/pages/home.module.css"
 
@@ -18,12 +23,18 @@ const ProjectPage = () => {
             />
             <div>
                 <h2 className={style.project__title} style={{ textAlign: 'left' }}>
-                    Serum <span className={style.text__animation}>
+                    Serum 
+                    <span className={style.text__animation}>
                         Projects
-                        </span>
+                    </span>
                 </h2>
+                
                 <p style={{ color: `${theme.palette.accents_3}` }}>Last Updated: June 7, 2021</p>
+            
                 <Divider />
+                <User src="https://github.com/serumstudio.png" name="Serum Studio">
+                    <User.Link href="https://twitter.com/serumstudio">@serumstudio</User.Link>
+                </User>
                 <p>
                     Here are some list of our projects that we developed this past year. Most of theme <br></br>
                     were open source and distributed under MIT license.

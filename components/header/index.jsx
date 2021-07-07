@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <Sticky>
-      <header className={style.header} style={{ backgroundColor: `${theme.palette.background}` }}>
+      <header className={style.header} style={{ backgroundColor: `${theme.palette.background}`}}>
         <Link href="/">
           <a className={style.logo} aria-label="Serum Logo">
             {/* <Logo fill={`${theme.palette.foreground}`} height={24} width={24} /> */}
@@ -59,17 +59,16 @@ const Header = () => {
         </nav>
 
         <div className={style.rightNav}>
-            <div className={style.btn_toggle}>
-              <Button
-                aria-label="Toggle Dark mode"
-                auto
-                type="abort"
-                onClick={() => prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark')}
-              >
-                {theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
+            
+            <Button
+              aria-label="Toggle Dark mode"
+              auto
+              type="abort"
+              onClick={() => prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark')}
+            >
+              {theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
               
-              </Button>
-            </div>
+            </Button>
             
         </div>
 
