@@ -11,6 +11,7 @@ import Terminal from "../components/terminal";
 import { useState, useEffect } from "react";
 import WindowsIcon from "../components/icons/windows";
 import * as Icons from "react-feather";
+ 
 
 const anglo_data = [
     { index: 0, text: "# Anglo, a modern lightweight web framework.", },
@@ -164,9 +165,9 @@ const ProjectPage = () => {
                         Serum Microphone was first released on <Code>April 12, 2021.</Code> If you still don&apos;t know how to install and setup, we have <a href="https://www.youtube.com/watch?v=XNxFuK9xeSY" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer">Tutorial Video</a>.                    
                     </Text>
                     <Spacer />
-                    <div>
-                        <Button shadow icon={<WindowsIcon fill={`${theme.palette.background}`} height={24} width={24} />} type="secondary" onClick = {() => { window.location.href = `https://github.com/serumstudio/microphone/releases/download/${serummicVersion}/serummic-${serummicVersion}.rar` }} >{` Download `}</Button>
-                        <Button shadow icon={<Icons.Youtube />} type="secondary" onClick = {() => { window.open('https://www.youtube.com/watch?v=XNxFuK9xeSY', '_blank') }} >{` Video Tutorial `}</Button>
+                    <div style={{ textAlign: "left" }} className={style.hero__btn__row}>
+                        <Button className={style.hero__btn} shadow icon={<WindowsIcon fill={`${theme.palette.background}`} height={24} width={24} />} type="secondary" onClick = {() => { window.location.href = `https://github.com/serumstudio/microphone/releases/download/${serummicVersion}/serummic-${serummicVersion}.rar` }} >{` Download `}</Button>
+                        <Button className={style.hero__btn} shadow icon={<Icons.Youtube />} type="secondary" onClick = {() => { window.open('https://www.youtube.com/watch?v=XNxFuK9xeSY', '_blank') }} >{` Video Tutorial `}</Button>
                         
                     </div>
                 </div>
