@@ -1,5 +1,5 @@
 
-import { Page, Note, Divider, Button, Link, Row, Col } from "@geist-ui/react";
+import { Page, Note, Divider, Button, Spacer, Image, Grid, Link, Row, Col } from "@geist-ui/react";
 import * as Icons from "react-feather";
 import style from "../styles/pages/home.module.css"
 import SEO from "../components/seo";
@@ -16,6 +16,7 @@ const HomePage = () => {
           image = "https://imgur.com/KamgzqK.png"
           theme = "#111"
         />
+        <Spacer y={1} />
         {/* Hero Section */}
         <div className={style.hero__section}>
 
@@ -43,7 +44,18 @@ const HomePage = () => {
           
         </div>
 
-        
+        {/* <Spacer y={5} />
+
+
+        <div style={{ textAlign: 'center' }}>
+          <h2></h2>
+          <Row>
+            <Col><h1>Hello</h1></Col>
+            <Col><h1>World</h1></Col>
+          </Row>
+        </div> */}
+
+
 
       </Page>
   )
