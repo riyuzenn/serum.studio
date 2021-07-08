@@ -158,9 +158,9 @@ const ProjectPage = () => {
                     For more information, documentation and source, kindly visit the main <a href="https://github.com/serumstudio/microphone/tree/main/docs" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer" >GitHub Documentation</a>. Or you may join our 
                     <a href="#" style={{ fontWeight: 'bold' }}> Discord Server</a> for help & support.
                 </Text>
-
+                <Spacer />
                 <div className={style.installation}>
-                <h2>Installation</h2>
+                <h3>Installation</h3>
                     <Text>
                         Serum Microphone was first released on <Code>April 12, 2021.</Code> If you still don&apos;t know how to install and setup, we have <a href="https://www.youtube.com/watch?v=XNxFuK9xeSY" style={{ fontWeight: 'bold' }} target="_blank" rel="noreferrer">Tutorial Video</a>.                    
                     </Text>
@@ -178,12 +178,73 @@ const ProjectPage = () => {
                 <h2>Anglo</h2>
                 <Note type="error" label="STATUS">Development | Ongoing</Note>
                 <Text>
-                    🪐 Anglo is a modern lightweight web framework for Python 3.
+                
+                    🪐 Anglo is a modern lightweight web framework for Python 3. 
+                    It is an open source framework use for deploying and developing, web applications
+                    with modern and lightweight integration. It was created to build web applications easily and reliable.
+                    <br></br><br></br>
+
+                    It also comes with alot of different features that you may want to check out. Anglo was mainly
+                    built at the top of WSGI Environment. It serves as a full wrapper for WSGI that makes your
+                    production easier. The API wrapper for Anglo is simmilar to famous web framework, Flask and
+                    Django.
+
                 </Text>
 
                 <Terminal data={anglo_data} success_text={'Anglo is successfully installed.'} />
                 <Spacer />
-                <Snippet style={{ lineHeight: 2 }} text="pip install anglo" width="500px" />
+                {/* <Snippet style={{ lineHeight: 2 }} text="pip install anglo" width="500px" /> */}
+                
+                {/* Features Section */}
+                <Collapse.Group>
+                    <Collapse title="Features" initialVisible>
+                        
+                        <Description title="Easy to use" content="It only have 2 button for preview and output." />
+                        <Spacer />
+                        <Description title="Improved performance" content={
+                            <p style={{ fontWeight: 500 }}>
+                                
+                                If you use v1.1.3+, we had a big update where <br></br>
+                                we focus on performance issues  
+                                
+                            </p>
+                        }/>
+                        <Spacer />
+                        <Description title="Open Source and absolutely free" content={
+                            <p style={{ fontWeight: 500 }}>
+                                This project is completely free and open source. <br></br> 
+                                Feel free to contribute at <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noreferrer" >GitHub Repo</a> also open <br></br> 
+                                an issue if there is.
+                            </p>
+                        }/>
+                    
+                    </Collapse>
+                    <Collapse title="FAQ">
+                        <Description title="How it Works?" content={
+                            <p style= {{ fontWeight: 500 }}>
+                                This software is powered by <a href="https://vb-audio.com/Cable/" target={"_blank"} rel="noreferrer" >VB Cable</a>. Basically, the VB Cable act as the main pipe where <br></br> 
+                                the streamed audio comes with. It won&apos;t work unless you installed the driver and setup the <br></br> audio input. <br></br> 
+                                <a href="">Learn more here</a> 
+                            </p>
+                        } />
+                        <Spacer />
+                        <Description title="How to report bug?" content={
+                            <p style= {{ fontWeight: 500 }}>
+                                It&apos;s simple, you can report bugs and issues on <a href="https://github.com/serumstudio/microphone" target={"_blank"} rel="noreferrer">GitHub</a>. 
+                                Or you can chat with developers via <br></br> discord: <Code>Zenqi#0231</Code>
+                                for full-time support.
+                            </p>
+                        } />
+                        <Spacer />
+                        <Description title="Is it safe?" content={
+                            <p style= {{ fontWeight: 500 }}>
+                                Absolutely yes. We want to deliver high quality products for free. We don&apos;t want to
+                                destroy our customer&apos;s trust with our products.
+                            </p>
+                        } />
+                    </Collapse>
+                </Collapse.Group>
+            
             </div>
             
 
