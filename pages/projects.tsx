@@ -176,7 +176,7 @@ const ProjectPage = () => {
 
                 <Divider />
                 <h2>Anglo</h2>
-                <Note type="error" label="STATUS">Development | Ongoing</Note>
+                <Note type="error" label="STATUS">Development | Failing</Note>
                 <Text>
                 
                     🪐 Anglo is a modern lightweight web framework for Python 3. 
