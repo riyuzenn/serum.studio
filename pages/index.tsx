@@ -38,7 +38,7 @@ const HomePage = () => {
               Projects
             </Button>
             <Button icon={<Icons.Twitter />} type="secondary" ghost className={style.hero__btn} onClick={() => { window.open('', '_blank') }}>
-              Crow - Z stupid
+              Twitter
             </Button>
           </div>
           
